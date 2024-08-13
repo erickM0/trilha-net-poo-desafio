@@ -5,9 +5,9 @@ namespace DesafioPOO.Models
         
         //Implementar as propriedades faltantes de acordo com o diagrama
         public string Numero { get; set; }
-        protected string Modelo{ get; set; }
-        protected string IMEI{ get; set; }
-        protected int Memoria{ get; set; }
+        private string Modelo{ get; set; }
+        private string IMEI{ get; set; }
+        private int Memoria{ get; set; }
 
         public Smartphone(string numero, string modelo, string imei, int memoria)
         {
@@ -28,6 +28,19 @@ namespace DesafioPOO.Models
         public void ReceberLigacao()
         {
             Console.WriteLine("Recebendo ligação...");
+        }
+
+        public void MostrarConfigurcoes(){
+
+            // Metodo para exibir configurações (propriedades privadas) do objeto
+            // Juntamente com as propriedades privadas, o método utiliza 
+            // a classe Object para obter o nome da classe e informar como "Marca"
+
+            Console.WriteLine("Configurações do smartphone:\n\n"+
+                              $"Marca: {this.GetType().Name}\n"+
+                              $"Modelo: {Modelo}\n"+
+                              $"Memoria: {Memoria}GB\n"+
+                              $"IMEI: {IMEI}\n");
         }
 
         public abstract void InstalarAplicativo(string nomeApp);
