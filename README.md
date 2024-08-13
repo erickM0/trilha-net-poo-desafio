@@ -20,3 +20,21 @@ Você deve criar as suas classes de acordo com o diagrama abaixo:
 
 ## Solução
 O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+
+## Resolução
+1. Inclusão das propriedades faltantes na clsse abstrata **Smasrphone**;
+
+2. Inclusão dos parametros responsáveis por adicionar os valores das propriedades, publicas e privadas.
+
+3. Aplicar a herança da classe **Smartphone** nas classes filhas: **Nokia** e **Iphone**;
+
+4. Utilizar o contrutor da classe base nas classes filhas
+
+5. Usar o **override** para sobrescrever a o metodo **InstalarAplicativo** criando uma implementação personalizada para cada classe filha;
+
+6. Incluir um metodo **MostrarConfiguracoes** para exibir as propriedades privadas, além de usar o metodo **GetType()** da clasee **Object**, para obter o nome da marca (o nome da classe instanciada);
+
+7. Realizar os testes das classes filhas, **Nokia** e **Iphone**.
+
+
+
